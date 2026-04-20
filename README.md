@@ -5,8 +5,8 @@ Day : 1
 Topic : CLASS & OBJECT
 Video Link : https://youtu.be/lWFzm8qIR1c?feature=shared
 
-Example 1 :
 Creating a class :-
+Example 1 :
 Public class Car{
  //Attributes of the Car class
  String color;
@@ -20,8 +20,27 @@ Public class Car{
  }
 }
 
-Example 2 :
+Example 2 : 
+class Student {
+    String name;
+    int age;
+    double grade;
+
+    Student(String name, int age, double grade) {
+        this.name  = name;
+        this.age   = age;
+        this.grade = grade;
+    }
+
+    void displayInfo() {
+        System.out.println("Name:  " + name);
+        System.out.println("Age:   " + age);
+        System.out.println("Grade: " + grade);
+    }
+}
+
 Creating an object :-
+Example 1 :
 public class Main {
  public static void main(String[] args){
   //Creating an object of the Car class
@@ -33,4 +52,16 @@ public class Main {
   // Calling the displayInfo method
   myCar.displayInfo();
  }
+}
+
+Example 2 :
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student("Rina", 22, 3.6);
+        Student s2 = new Student("Shorna",   22, 3.9);
+
+        s1.displayInfo();
+        System.out.println("---");
+        s2.displayInfo();
+    }
 }
