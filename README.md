@@ -68,7 +68,7 @@ public class Main {
 Date : 20/4/2026
 Day : 2
 Topic : Encapsulation
-Video Link :
+Video Link : https://youtu.be/HZUUYnIZO_0?feature=shared
 Example 1 :
 class Person{
  private String name;
@@ -137,7 +137,7 @@ public class Main {
 Date : 21/4/2026
 Day : 3
 Topic : Constructor
-Video Link :
+Video Link :https://youtu.be/acfR5vRTZvc?feature=shared
 Example 1 :- 
 Default constructor:
 class Dog{
@@ -178,8 +178,8 @@ public class Main {
 
 Date : 22/4/2026
 Day : 4
-Topic : CLASS & OBJECT
-Video Link :
+Topic : Inheritance
+Video Link : https://youtu.be/j_VA2Rp6jM0?feature=shared
 
 Example 1:-
 Single inheritance:
