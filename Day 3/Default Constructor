@@ -1,0 +1,17 @@
+class Dog{
+ String Name;
+ //Default Constructor
+ Dog(){
+  name = "Unknown";
+ }
+ void display(){
+   System.out.println("Dog's name :"+name);
+ }
+}
+public class Main {
+  public static void main(String[] args){
+    Dog myDog = new Dog();
+    myDog.display();
+  }
+}
+
