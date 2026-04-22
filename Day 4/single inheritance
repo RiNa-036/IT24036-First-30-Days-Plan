@@ -1,0 +1,21 @@
+//single inheritance
+ class Animal{//superclass
+   String name;
+   void eat(){
+      System.out.println(name + "is eating.");
+   }
+//subclass
+class Dog extends Animal{
+   void bark(){
+     System.out.println(name + "says woof!.");
+   }
+}
+public class Main{
+  public static void main(String[] args){
+    Dog myDog = new Dog();
+    myDog.name = "Buddy";//setting the name
+    myDog.eat();//
+    myDog.bark();
+  }
+}
+
