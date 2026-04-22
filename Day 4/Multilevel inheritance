@@ -1,0 +1,31 @@
+//Multilevel inheritance 
+
+ class Animal{//superclass
+   String name;
+   void eat(){
+      System.out.println(name + "is eating.");
+   }
+//subclass
+class Dog extends Animal{
+   void bark(){
+     System.out.println(name + "says woof!.");
+   }
+}
+
+class Puppy extends Dog{
+  void weep(){
+    System.out.println(name + "is weeping.");
+  }
+}
+public class Main{
+  public static void main(String[] args){
+    Dog myDog = new Dog();
+    Puppy myPuppy = new Puppy();
+    myDog.name = "Buddy";//setting the name
+    myDog.eat();//
+    myDog.bark();
+    myPuppy.bark();
+    myPuppy.weep();
+  }
+}
+
