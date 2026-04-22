@@ -1,0 +1,18 @@
+
+class Dog{
+ String Name;
+ //Parameterized Constructor
+ Dog(String dogName){
+  name = dogName;
+ }
+ void display(){
+   System.out.println("Dog's name :"+name);
+ }
+}
+public class Main {
+  public static void main(String[] args){
+    Dog myDog = new Dog("Buddy");
+    myDog.display();// Output: Dog's name : Buddy
+  }
+}
+
