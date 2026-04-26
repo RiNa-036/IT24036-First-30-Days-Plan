@@ -234,5 +234,62 @@ public class Main{
   }
 }
 
+Date : 26/4/2026
+Day : 5
+Topic : Polymorphism
+Video Link : https://youtu.be/bLke13zY4rg?feature=shared
+Example 1  :-
+Compile time Polymorphism :
+class MathOperations{
+   // method to add two integers
+   int add(int a,int b){
+     return a + b;
+   }
+   // method to add three integers
 
+    int add(int a,int b,int c){
+     return a + b +c;
+   }
+     // method to add two double values
+
+    double add(double a,double b){
+     return a + b;
+   }
+}
+
+ public class MainMath{
+   public static void main(String[] args ){
+     MathOperations math = new  MathOperations();
+     System.out.println("Sum of 2 and 3 : "+math.add(2,3));
+     System.out.println("Sum of 2, 3 and 4 : "+math.add(2,3,4));
+     System.out.println("Sum of 2.5 and 3.5 : "+math.add(2.5,3.5));
+   }
+}
+
+Example 2 :-
+Runtime Polymorphism:
+class Animal{
+  void sound(){
+    System.out.println("Animal makes sound.");
+  }
+}
+class Dog extends Animal {
+  void sound(){
+    System.out.println("Dog barks");
+  }
+}
+class Cat extends Animal {
+  void sound(){
+    System.out.println("Cat meows");
+  }
+}
+public class Main{
+   public static void main(String[] args ){
+      Animal myAnimal;
+      myAnimal = new Dog();
+      myAnimal.sound();
+      myAnimal = new Cat();
+      myAnimal.sound();
+  }
+}
 
