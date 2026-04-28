@@ -1,0 +1,16 @@
+//Static nested class
+class OuterClass{
+  static int staticVariable = 20;
+  static class StaticNestedClass {
+     void show(){
+        System.out.println("Static variable value: " + staticVariable);
+      }
+   }
+}
+
+public class Main {
+   public static void main(String[] args){
+      OuterClass.StaticNestedClass nested = new OuterClass.StaticNestedClass();
+           nested.show();//Output: Static variable value: 20
+    }
+}
