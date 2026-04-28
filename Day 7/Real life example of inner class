@@ -1,0 +1,36 @@
+//Example of inner class
+class Library{
+  //Outer class variable
+  private String libraryName;
+  // Constructor for Library class
+  public Library(String name){
+     this.libraryName = name;
+  }
+  //Inner class representing a Book
+  class Book{
+    private String title;
+    private String author;
+    //Constructor for Book class
+    public Book(String title, String author){
+      this.title = title;
+      this.author = author;
+    }
+    //Method to display book details
+    public void displayBookInfo{
+      System.out.println("Library: " + libraryName);
+      System.out.println("Book Title: "+title);
+      System.out.println("Author: " + author);
+    }
+   }
+}
+public class Main{
+  public static void main(String[] args){
+     //Create an instance of library
+     Library myLibrary = new Library("City Library");
+     //Create an instance of Book using the outer class instance
+     Library.Book myBook = new myLibrary.new Book("1984","George Orwell");
+     //Display Book information
+     myBook.displayBookInfo();
+   }
+}     
+ 
