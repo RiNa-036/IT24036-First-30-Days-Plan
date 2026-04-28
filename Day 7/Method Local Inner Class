@@ -1,0 +1,27 @@
+//Method-local inner class
+class OuterClass{
+  void myMethod(){
+     class MethodLocalInner{
+         void display(){
+              System.out.println("Inside method Local Inner Class");
+          }
+      }
+      MethodLocalInner inner = new MethodLocalInner();
+      inner.display();//call the display method
+   }
+}
+
+//Anonymous inner class
+interface Greeting {
+   void greet();
+}
+public class Main{
+  public static void main(String[] args){
+      Greeting greeting = new Greeting(){
+          public void greet(){
+             System.out.println("Hello from Anonymous Inner Class!");
+          }
+       };
+       greeting.greet();//This will print "Hello from anonymous Inner Class!"
+   }
+}
