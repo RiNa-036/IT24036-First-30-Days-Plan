@@ -1,0 +1,23 @@
+//Hashset Example
+import java.util.HashSet;
+public class HashSetExample {
+   public static void main (String [] args){
+      //Creating a Hashset
+      HashSet<String> fruits = new HashSet<>();
+      //adding elements to the HashSet
+      fruits.add("Apple");
+      fruits.add("Banana");
+      fruits.add("Cherry");
+      fruits.add("Banana");//Duplicate will not be added
+      //Displaying the Hashset
+      System.out.println("Fruits in the HashSet: " + fruits);//Output: [Apple, Cherry, Banana]
+      //Checking if an element exists 
+      if(fruits.contains("Apple")){
+        System.out.println("Apple is present in the set.");
+      }
+      //Removing an element
+      fruits.remove("Cherry");
+      System.out.println("After removal: " + fruits);//[Apple, Banana]
+    }
+}   
+ 
