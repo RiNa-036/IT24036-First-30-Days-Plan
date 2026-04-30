@@ -1,0 +1,20 @@
+//ArrayList Operations 
+import java.util.ArrayList;
+public class ArrayListExample{
+   public static void main(String[] args){
+     //Create an ArrayList
+     ArrayList<String> fruits = new ArrayList<>();
+
+     //Add elemets to the ArrayList
+     fruits.add("Apple");
+     fruits.add("Banana");
+     fruits.add("Cherry");
+     //Access the element
+     System.out.println("First fruit: " + fruits.get(0)); //Output: Apple
+     //Remove an element
+     fruits.remove("Banana");
+     //print all elements
+      System.out.println("Fruits List: " + fruits);
+     }
+}
+
