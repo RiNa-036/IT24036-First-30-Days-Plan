@@ -1,0 +1,25 @@
+//Real-life queue implementation 
+import java.util.LinkedList;
+import java.util.Queue;
+public class CustomerServiceQueue {
+  public static void main(String[] arge){
+     //Creating a queue to represent customers waiting foe service
+     Queue<String> customerQueue = new LinkedList<>();
+     //customers arrive and join the queue
+     customerQueue.offer("Customer 1");
+     customerQueue.offer("Customer 2");
+     customerQueue.offer("Customer 3");
+     //Displaying the current Queue
+     System.out.println("Current Customer Queue: " + customerQueue); //Output:[1,2,3]
+     //Serving the first customer in the queue
+     String servedCustomer = customerQueue.poll();
+     System.out.println("Serving: " + servedCustomer);//Output: Customer 1
+     //Displaying the queue after serving one customer
+     System.out.println("Customer Queue after serving one: " + customerQueue);//Output: [2,3]
+     //Serving another customer
+     servedCustomer = customerQueue.poll();
+     System.out.println("Serving : "+ servedCustomer);//Output:Customer 2 
+     //Final state of the queue
+     System.out.println("Final Customer Queue: " + customerQueue);//Output: [Customer 3]
+  }
+} 
