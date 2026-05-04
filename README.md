@@ -292,4 +292,37 @@ public class Main{
       myAnimal.sound();
   }
 }
+Date : 27/4/2026
+Day : 6
+Topic : Abstract class and Interface
+Video Link : https://youtu.be/1SXyi3DK-88?si=0sSQRMuc_nGXvSTe
 
+Date : 28/4/2026
+Day : 7
+Topic : Inner class
+Video Link : https://youtu.be/lsJ9QjJPbx8?si=iMdfsE0sLoVufRtv
+
+Date : 29/4/2026
+Day : 8
+Topic : Array and Linked list
+Video Link : https://youtu.be/q-5D9Z9BCVI?si=5YqmvQJ2OeO1UCqb
+
+ Date : 30/4/2026
+Day : 9
+Topic : HashSet and TreeSet
+Video Link :https://youtu.be/XDw-BkAZYmY?si=N7BmziRjssKC4hFT
+
+Date : 1/5/2026
+Day : 10
+Topic : Queue Implementation
+Video Link : https://youtu.be/PccU1wAdnlM?si=G3ys1yPLe3wa3VC6
+
+Date : 2/5/2026
+Day : 11
+Topic : HashMap and TreeMap
+Video Link : https://youtu.be/ZarOdaT7P2k?si=Pb4T8rsuIu2IyUjP
+
+Date : 3/5/2026
+Day : 12
+Topic : Collection in real world scenario
+Video Link : https://youtu.be/gtmBSl10DvY?si=FBKAqL2pTUgeoxx-
