@@ -1,0 +1,27 @@
+//Creating a Directory
+import java.io.File;
+public class CreateDirectory{
+   public static void main(String [] args){
+        //define the directory path
+        String directoryPath = "Projects/Java";
+        //Create a file object
+        File directory = new File(directoryPath);
+        //Create the directory
+        if(!directory.exists()) {
+            boolean created = directory.mkdirs();//use mkdirs() to create nested              //directories
+                if(created){
+                     System.out.println("Directory created successfully: " + directoryPath);
+                }
+                else{
+                     System.out.println("Failed to Create directory");
+                }
+           }
+                     
+           else{
+                 System.out.println("Directory already exists: " + directoryPath);
+
+           }
+         
+     }
+}
+
