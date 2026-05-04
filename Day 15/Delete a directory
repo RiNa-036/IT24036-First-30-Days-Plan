@@ -1,0 +1,27 @@
+//Delete a directory
+import java.io.File;
+public class DeleteDirectory{
+   public static void main(String [] args){
+        //define the directory path
+        String directoryPath = "Projects/Java";
+        //Create a file object
+        File directory = new File(directoryPath);
+        //Check if the directory exists
+        if(directory.exists()) {
+             //Delete the directory
+            boolean deleted = directory.delete();
+                if(deleted){
+                     System.out.println("Directory deleted successfully: "+ directoryPath);
+         
+                } 
+                else{
+                     System.out.println("Failed to delete directory.It may not be empty.");
+                }
+          }
+          else{
+                System.out.println("Directory does not exist: " + directoryPath);
+
+           }
+         }
+     }
+}
