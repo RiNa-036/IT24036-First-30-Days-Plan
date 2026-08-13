@@ -1,0 +1,20 @@
+//java NIO file
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.io.IOException;
+public class CreatedDirectoryNIO{
+    public static  void main(String [] args){
+          Path path = Paths.get("Projects/NioExample");
+              try{
+                 //Create the directory using NIO
+                   Path createdDir = Files.createDirectories(path);
+                   System.out.println("Directory created successfully: " + createdDir.toString());
+             }
+             catch(IOException e){
+                   System.err.println("Failed to create directory: " + e.getMessage());
+             }
+    }
+}
+
